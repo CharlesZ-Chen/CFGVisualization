@@ -33,7 +33,7 @@ S extends Store<S>, T extends TransferFunction<A, S>> extends DOTCFGVisualizer<A
 	}
 
 	@Override
-	public void visualizeArrayAccess(FlowExpressions.ArrayAccess arrayAccess, A value) {
+	public void visualizeArrayValue(FlowExpressions.ArrayAccess arrayAccess, A value) {
 		this.sbStore.append("  " + arrayAccess + " > " +
 				arrayAccess.getType()
                 + "\\n");
