@@ -1,0 +1,29 @@
+<project name="CFGVisualization" default="compile" basedir=".">
+    <property name="projectbin" location="./bin"/>
+    <property name="projectsrc" location="./src"/>
+    <property name="DOTCFGsrc" location="${projectsrc}/DOTCFGVisualizer"/>
+    <property name="DOTCFGbin" location="${projectbin}/DOTCFGVisualizer"/>
+    <property environment="env" />
+    <property name="dataflow-jar" location="${env.CHECKERFRAMEWORK}/dataflow/dist/dataflow.jar"/>
+
+    <target name="init-project">
+    	<mkdir dir="${projectbin}"/>
+    </target>
+
+    <target name="compile" depends="init-project,compile-DOTCFG"/>
+    
+    <target name="compile-DOTCFG">
+    	<javac srcdir="${DOTCFGsrc}" 
+               destdir="${projectbin}" 
+               fork="yes">
+            <classpath>
+                <pathelement location="${dataflow-jar}"/>    
+            </classpath>
+        </javac>  
+    </target>
+
+    <target name="clean">
+        <delete dir="${projectbin}"/>
+    </target>
+
+</project>  
