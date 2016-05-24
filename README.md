@@ -1,4 +1,4 @@
-# CFGVisualization
+# CFGVisualization ![](https://travis-ci.org/CharlesZ-Chen/CFGVisualization.svg?branch=master)
 Control Flow Graph Visualization for Checker Framework
 
 #Requirement
@@ -13,15 +13,9 @@ https://github.com/wmdietl/checker-framework
 
 #Building
 
-1. First build the dependences(jsr308-langtools, annotation-tools, checker-framework) by following tutorial:
+First create a root dir for this projects and its dependences. (mine called `jsr308`).
 
-http://types.cs.washington.edu/checker-framework/current/checker-framework-manual.html#build-source
-
-2. Then clone this project into the `jsr` directory. In the clone, build it by:
-  
-  ```
-  ant
-  ```
+In the root dir, clone this project. In the clone, run `setup.sh`.
 
 #Example
 
