@@ -1,0 +1,9 @@
+language: java
+
+# current I don't have test suites on CFGVisualization
+script: ./.travis-build-without-test.sh
+
+sudo: false
+
+jdk:
+  - oraclejdk8
