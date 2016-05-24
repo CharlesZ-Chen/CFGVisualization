@@ -11,18 +11,15 @@ https://github.com/typetools/annotation-tools
 
 https://github.com/wmdietl/checker-framework
 
-You'll need environment variables `CHECKERFRAMEWORK`, `JSR308` and `JAVA_HOME`  set up appropriately.
-
 #Building
 
 1. First build the dependences(jsr308-langtools, annotation-tools, checker-framework) by following tutorial:
 
 http://types.cs.washington.edu/checker-framework/current/checker-framework-manual.html#build-source
 
-2. Then clone this project into the `$CHECKERFRAMWORK` directory and build it by:
+2. Then clone this project into the `jsr` directory. In the clone, build it by:
   
   ```
-  cd $CHECKERFRAMWORK/CFGVisualization
   ant
   ```
 
