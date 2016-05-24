@@ -10,8 +10,9 @@ import org.checkerframework.dataflow.cfg.block.Block;
 
 public class DOTCFGVisualizerOnlyBlock <A extends AbstractValue<A>,
 S extends Store<S>, T extends TransferFunction<A, S>> extends DOTCFGVisualizer<A, S, T> {
-	@Override
-	protected void visualizeBlockTransferInput(Block bb, Analysis<A, S, T> analysis,
-    		StringBuilder sbBlockContent) {
-	}
+    @Override
+    public void visualizeBlockTransferInput(Block bb, Analysis<A, S, T> analysis) {
+        // Intentional Empty
+    }
+
 }

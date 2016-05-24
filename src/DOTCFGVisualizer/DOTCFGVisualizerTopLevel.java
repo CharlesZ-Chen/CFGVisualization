@@ -12,17 +12,16 @@ import org.checkerframework.dataflow.cfg.block.Block.BlockType;
 
 public class DOTCFGVisualizerTopLevel<A extends AbstractValue<A>,
 S extends Store<S>, T extends TransferFunction<A, S>> extends DOTCFGVisualizer<A, S, T> {
-	@Override
-	protected String visualizeBlock(
+    @Override
+    public void visualizeBlock(
             Block bb,
             /*@Nullable*/ Analysis<A, S, T> analysis) {
-		
-		if (bb.getType() == BlockType.SPECIAL_BLOCK) {
-			StringBuilder sbBlock = new StringBuilder();
-			visualizeSpecialBlock((SpecialBlock) bb, sbBlock);
-			return sbBlock.toString();
-		} else {
-			return "";
-		}
-	}
+        this.sbBlock.setLength(0);
+        if (bb.getType() == BlockType.SPECIAL_BLOCK) {
+            visualizeSpecialBlock((SpecialBlock) bb);
+        }
+
+        this.sbDigraph.append(this.sbBlock.toString().replace("\\n", "\\l") + " \",];\n");
+    }
+
 }
