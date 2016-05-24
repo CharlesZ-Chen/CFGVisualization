@@ -1,0 +1,12 @@
+*~
+
+# Eclipse output
+bin/
+
+# ant output
+build-deps/
+
+# example Makefile output
+example/bin/
+example/pdfs/
+example/dotfiles_*
