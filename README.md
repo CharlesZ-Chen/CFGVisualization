@@ -11,6 +11,10 @@ https://github.com/typetools/annotation-tools
 
 https://github.com/wmdietl/checker-framework
 
+To build the example and generate PDFs, you will need `dot` installed on your machine.
+
+TODO: add auto-install `dot` script in travis-build-without-test.sh.
+
 #Building
 
 First create a root dir for this projects and its dependences. (mine called `jsr308`).
