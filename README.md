@@ -1,4 +1,7 @@
-# CFGVisualization ![](https://travis-ci.org/CharlesZ-Chen/CFGVisualization.svg?branch=master)
+# CFGVisualization 
+
+[![build-status](https://travis-ci.org/CharlesZ-Chen/CFGVisualization.svg?branch=master)](https://travis-ci.org/CharlesZ-Chen/CFGVisualization)
+
 Control Flow Graph Visualization for Checker Framework
 
 #Requirement
